@@ -1,45 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1a1a1d;
+    color: #eaeaea;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #0f0f0f;
+    color: #00ccff;
+    padding: 15px 0;
     text-align: center;
+    border-bottom: 2px solid #00ccff;
 }
 
 .logo {
     max-width: 150px;
+    filter: drop-shadow(0 0 10px #00ccff);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: gray;
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff33cc;
 }
 
 section {
-    padding: 20px;
-    margin: 20px 0;
+    padding: 25px;
+    margin: 25px 0;
+    background-color: #1e1e24;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.2);
 }
 
 h1, h2 {
-    color: #333;
+    color: #00ccff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 ul {
@@ -48,41 +62,59 @@ ul {
 }
 
 ul li {
-    background: #ddd;
-    margin: 5px 0;
-    padding: 10px;
+    background: #2b2b30;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+ul li:hover {
+    background: #00ccff;
+    color: #000;
 }
 
 form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    background: #1e1e24;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.2);
 }
 
 form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #00ccff;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #00ccff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #eaeaea;
 }
 
 form button {
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
+    background-color: #00ccff;
+    color: #000;
+    padding: 12px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #ff33cc;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #0f0f0f;
+    color: #00ccff;
     text-align: center;
-    padding: 10px 0;
-    bottom: 0;
-    width: 100%;
+    padding: 15px 0;
+    border-top: 2px solid #00ccff;
 }
